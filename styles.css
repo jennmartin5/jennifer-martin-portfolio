@@ -276,8 +276,8 @@ h2 {
 }
 
 .project-card:first-child .project-image-wrap img {
-  transform: scale(1.55);
-  transform-origin: 100% 15%;
+  transform: scale(2);
+  transform-origin: 100% 0%;
 }
 
 
