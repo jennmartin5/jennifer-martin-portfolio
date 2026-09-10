@@ -66,6 +66,20 @@ a {
 .site-nav a {
   font-size: 14px;
   font-weight: 500;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.site-nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  background: var(--accent);
+  border-radius: 50%;
+  transform: translateX(-50%);
 }
 
 .menu-toggle {
