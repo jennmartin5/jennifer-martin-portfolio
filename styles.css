@@ -364,7 +364,8 @@ footer {
 
 footer div {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 18px;
 }
 
 @media (max-width: 980px) {
