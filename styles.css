@@ -275,6 +275,12 @@ h2 {
   object-fit: cover;
 }
 
+.project-card:first-child .project-image-wrap img {
+  transform: scale(1.35);
+  transform-origin: 78% center;
+}
+
+
 .project-placeholder {
   display: grid;
   place-items: center;
