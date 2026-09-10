@@ -381,6 +381,33 @@ footer div {
   }
 }
 
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(34, 31, 29, 0.25);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--text);
+}
+
+.social-icon:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.social-icon:hover svg {
+  fill: white;
+}
+
 @media (max-width: 720px) {
   .section,
   .site-header,
