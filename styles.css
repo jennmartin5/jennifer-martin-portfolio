@@ -276,8 +276,11 @@ h2 {
 }
 
 .project-card:first-child .project-image-wrap img {
-  transform: scale(2);
-  transform-origin: 100% 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right top;
+  transform: none;
 }
 
 
