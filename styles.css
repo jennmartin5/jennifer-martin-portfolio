@@ -280,7 +280,8 @@ h2 {
   height: 100%;
   object-fit: cover;
   object-position: right top;
-  transform: none;
+  transform: scale(1.55);
+  transform-origin: right top;
 }
 
 
