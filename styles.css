@@ -1790,7 +1790,17 @@ footer > div {
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  width: 100%;
+  max-width: none;
+
+  padding-left: max(50px, calc((100% - 1100px) / 2));
+  padding-right: max(50px, calc((100% - 1100px) / 2));
+
   background: rgba(247, 243, 237, 0.96);
+
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(23, 20, 17, 0.08);
 }
