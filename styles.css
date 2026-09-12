@@ -1781,3 +1781,16 @@ footer > div {
   }
 
 }
+
+/* =========================================
+   STICKY NAVIGATION
+   ========================================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(247, 243, 237, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
