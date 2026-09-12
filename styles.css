@@ -1817,3 +1817,11 @@ footer {
 
   border-top: 1px solid rgba(23, 20, 17, 0.08);
 }
+
+/* =========================================
+   HERO → SELECTED WORK DIVIDER
+   ========================================= */
+
+.work-section {
+  border-top: 1px solid rgba(23, 20, 17, 0.08);
+}
