@@ -1804,3 +1804,16 @@ footer > div {
 
   border-bottom: 1px solid rgba(23, 20, 17, 0.08);
 }
+
+/* =========================================
+   FULL-WIDTH FOOTER
+   ========================================= */
+
+footer {
+  width: 100%;
+  max-width: none;
+
+  padding: 32px max(50px, calc((100% - 1100px) / 2)) 45px;
+
+  border-top: 1px solid rgba(23, 20, 17, 0.08);
+}
