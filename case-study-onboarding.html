@@ -3,115 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Role-Based Product Onboarding — UX case study by Jennifer Martin."
+  />
+
   <title>Role-Based Product Onboarding | Jennifer Martin</title>
 
-  <link rel="preconnect" href="https://urldefense.com/v3/__https://fonts.googleapis.com__;!!KMayzP4JbQ!ZGXvujuMH0c7YV5aOIOgIUUxB9RhABZ-JGN7k5qLhbX_TCV1uJ0vjX1CB95D1gIYRjnsT_SYd8WzM02WWCfU$ ">
-  <link rel="preconnect" href="https://urldefense.com/v3/__https://fonts.gstatic.com__;!!KMayzP4JbQ!ZGXvujuMH0c7YV5aOIOgIUUxB9RhABZ-JGN7k5qLhbX_TCV1uJ0vjX1CB95D1gIYRjnsT_SYd8WzMwAWbax0$ " crossorigin>
+  <link rel="preconnect" href="https://urldefense.com/v3/__https://fonts.googleapis.com__;!!KMayzP4JbQ!elhSerb-6hyghV3omB8UflW-agBiyaJa5MuXrv6LHlJswNYmBDzNplZ0zy8t5cdv8TXQYpCM0_oU_nH3o4zw$ ">
+  <link rel="preconnect" href="https://urldefense.com/v3/__https://fonts.gstatic.com__;!!KMayzP4JbQ!elhSerb-6hyghV3omB8UflW-agBiyaJa5MuXrv6LHlJswNYmBDzNplZ0zy8t5cdv8TXQYpCM0_oU_tvfFpYM$ " crossorigin>
 
   <link
-    href="https://urldefense.com/v3/__https://fonts.googleapis.com/css2?family=DM*Sans:wght@400;500;600;700&family=Playfair*Display:wght@500;600&display=swap__;Kys!!KMayzP4JbQ!ZGXvujuMH0c7YV5aOIOgIUUxB9RhABZ-JGN7k5qLhbX_TCV1uJ0vjX1CB95D1gIYRjnsT_SYd8WzM9X7AVEr$ "
+    href="https://urldefense.com/v3/__https://fonts.googleapis.com/css2?family=DM*Sans:wght@400;500;600;700&family=Playfair*Display:wght@500;600&display=swap__;Kys!!KMayzP4JbQ!elhSerb-6hyghV3omB8UflW-agBiyaJa5MuXrv6LHlJswNYmBDzNplZ0zy8t5cdv8TXQYpCM0_oU_v8i62m-$ "
     rel="stylesheet"
   />
 
   <link rel="stylesheet" href="styles.css" />
-
-  <style>
-    .case-hero {
-      padding: 100px 0 64px;
-    }
-
-    .case-hero h1 {
-      font-size: clamp(54px, 7vw, 96px);
-      max-width: 1000px;
-    }
-
-    .case-wrap {
-      max-width: 920px;
-    }
-
-    .case-image {
-      margin: 40px 0 80px;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
-
-    .case-section {
-      padding: 70px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .case-section h2 {
-      font-size: clamp(38px, 4vw, 56px);
-    }
-
-    .case-section p {
-      font-size: 18px;
-      color: var(--muted);
-    }
-  </style>
 </head>
 
-<body>
+<body class="case-study-page">
 
+  <!-- NAVIGATION -->
   <header class="site-header">
     <a class="brand" href="index.html">JM</a>
 
-    <nav class="site-nav" style="display: flex;">
-      <a href="index.html#work">← Back to Work</a>
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
   </header>
 
+
   <main>
 
-    <section class="section case-hero">
+    <!-- CASE STUDY HERO -->
+    <section class="case-hero">
 
-      <p class="eyebrow">CASE STUDY</p>
+      <a class="case-back-link" href="index.html#work">
+        ← Back to selected work
+      </a>
 
-      <h1>
-        Role-Based Product Onboarding
-      </h1>
+      <div class="case-hero-grid">
 
-      <p class="hero-lead">
-        A centralized learning experience designed to help clinical users find
-        the right training and resources faster.
-      </p>
+        <div class="case-hero-copy">
 
-      <div class="tags">
-        <span>UX STRATEGY</span>
-        <span>USER FLOW</span>
-        <span>UI DESIGN</span>
+          <p class="eyebrow">PRODUCT ONBOARDING · UX STRATEGY</p>
+
+          <h1>
+            Designing a role-based onboarding experience for complex
+            clinical workflows.
+          </h1>
+
+          <p class="case-hero-lead">
+            I explored how product-led onboarding could help clinical
+            research users discover the training, resources, and workflows
+            most relevant to their role—without requiring a large custom
+            engineering effort.
+          </p>
+
+        </div>
+
+        <aside class="case-summary-card">
+
+          <div class="case-summary-item">
+            <span>My Role</span>
+            <p>Product / UX Designer</p>
+          </div>
+
+          <div class="case-summary-item">
+            <span>Focus</span>
+            <p>
+              UX strategy, information architecture, user flows,
+              interaction design, prototyping
+            </p>
+          </div>
+
+          <div class="case-summary-item">
+            <span>Context</span>
+            <p>Healthcare · Clinical research technology</p>
+          </div>
+
+          <div class="case-summary-item">
+            <span>Stage</span>
+            <p>Concept exploration + proof of concept</p>
+          </div>
+
+        </aside>
+
       </div>
 
-    </section>
-
-
-    <section class="section">
-
-      <div class="case-image">
+      <div class="case-hero-image">
         <img
           src="assets/project-onboarding.png"
-          alt="Role-Based Product Onboarding interface"
+          alt="Role-based product onboarding interface"
         />
       </div>
 
     </section>
 
 
-    <section class="section case-section">
+    <!-- OVERVIEW -->
+    <section class="case-section case-two-column">
 
-      <div class="case-wrap">
+      <div class="case-section-label">
+        <p class="eyebrow">01 · OVERVIEW</p>
+      </div>
 
-        <p class="eyebrow">THE CHALLENGE</p>
+      <div class="case-section-content">
 
         <h2>
-          Make training easier to find and easier to use.
+          The challenge wasn't creating more training.
+          It was connecting users to the right training.
         </h2>
 
+        <p class="case-large-copy">
+          Our product team already had a collection of training videos,
+          PDFs, and supporting resources available through SharePoint.
+          The problem was that those resources were not receiving the level
+          of engagement the team wanted.
+        </p>
+
         <p>
-          Clinical users needed a clearer way to access onboarding materials,
-          training videos, guides, and resources without relying on a separate
-          training destination.
+          During a product team discussion, the question initially centered
+          on how we could drive more traffic to the existing training site.
+          I saw an opportunity to look at the problem differently.
+        </p>
+
+        <p>
+          Instead of asking users to leave the product, navigate to another
+          system, and determine which resources applied to them, I began
+          exploring how onboarding and contextual guidance could become part
+          of the product experience itself.
         </p>
 
       </div>
@@ -119,20 +154,22 @@
     </section>
 
 
-    <section class="section case-section">
+    <!-- PROBLEM -->
+    <section class="case-section case-highlight-section">
 
-      <div class="case-wrap">
+      <div class="case-highlight-inner">
 
-        <p class="eyebrow">MY ROLE</p>
+        <p class="eyebrow">THE PROBLEM I REFRAMED</p>
 
-        <h2>
-          From concept to structured onboarding experience.
-        </h2>
+        <blockquote>
+          “How might we help users understand what they need to learn,
+          based on their role and workflow, without making them search
+          through a separate training repository?”
+        </blockquote>
 
         <p>
-          I developed the onboarding concept, mapped the user and admin
-          experiences, organized content around user roles, and designed the
-          interface and supporting flows.
+          This reframing shifted the conversation from promoting a repository
+          to designing a more intentional product adoption experience.
         </p>
 
       </div>
@@ -140,20 +177,403 @@
     </section>
 
 
-    <section class="section case-section">
+    <!-- CONTEXT -->
+    <section class="case-section case-two-column">
 
-      <div class="case-wrap">
+      <div class="case-section-label">
+        <p class="eyebrow">02 · CONTEXT</p>
+      </div>
 
-        <p class="eyebrow">THE APPROACH</p>
+      <div class="case-section-content">
 
         <h2>
-          Organize content around what each user actually needs.
+          Different users needed different paths through the product.
         </h2>
 
         <p>
-          The experience combines role-based onboarding with guides, videos,
-          searchable resources, and a getting-started checklist so users can
-          quickly identify the materials most relevant to their responsibilities.
+          The product supports complex clinical research workflows.
+          That means onboarding is not necessarily a single linear journey.
+          A user may need different guidance depending on their
+          responsibilities, permissions, or tasks.
+        </p>
+
+        <p>
+          A generic “getting started” experience risked presenting every
+          user with too much information at once. I wanted the experience
+          to prioritize relevance rather than volume.
+        </p>
+
+        <div class="case-principles-grid">
+
+          <article class="case-principle-card">
+            <span>01</span>
+            <h3>Relevant</h3>
+            <p>
+              Prioritize resources associated with the user's role instead
+              of exposing the entire training library.
+            </p>
+          </article>
+
+          <article class="case-principle-card">
+            <span>02</span>
+            <h3>Contextual</h3>
+            <p>
+              Introduce help closer to the workflow rather than requiring
+              users to independently search for it.
+            </p>
+          </article>
+
+          <article class="case-principle-card">
+            <span>03</span>
+            <h3>Progressive</h3>
+            <p>
+              Guide users through the most important tasks first and allow
+              deeper learning to happen as needed.
+            </p>
+          </article>
+
+          <article class="case-principle-card">
+            <span>04</span>
+            <h3>Scalable</h3>
+            <p>
+              Create a structure that could support additional roles,
+              content, and workflows over time.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROCESS -->
+    <section class="case-section case-process-section">
+
+      <div class="case-section-heading">
+
+        <p class="eyebrow">03 · DESIGN PROCESS</p>
+
+        <h2>
+          I moved from a content problem to a product experience strategy.
+        </h2>
+
+      </div>
+
+      <div class="case-process">
+
+        <article class="case-process-step">
+
+          <div class="case-process-number">01</div>
+
+          <div>
+            <h3>Understand the existing experience</h3>
+
+            <p>
+              I started by looking at how training was currently being
+              delivered and where the experience created additional work
+              for users.
+            </p>
+
+            <p>
+              The existing approach depended heavily on users knowing that
+              the SharePoint repository existed, leaving their current
+              workflow, finding the correct material, and determining
+              whether that content was relevant to their responsibilities.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="case-process-step">
+
+          <div class="case-process-number">02</div>
+
+          <div>
+            <h3>Define the onboarding model</h3>
+
+            <p>
+              Rather than treating onboarding as one universal tutorial,
+              I structured the concept around role-specific learning paths.
+            </p>
+
+            <p>
+              Each pathway could surface a focused checklist containing the
+              highest-priority videos, documents, and product tasks for that
+              type of user.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="case-process-step">
+
+          <div class="case-process-number">03</div>
+
+          <div>
+            <h3>Map the experience</h3>
+
+            <p>
+              I explored how a new user could move from first login to
+              orientation, required learning, and eventually contextual
+              guidance inside the interface.
+            </p>
+
+            <p>
+              This helped separate what needed to happen immediately from
+              what could be introduced progressively as the user began
+              working within the product.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="case-process-step">
+
+          <div class="case-process-number">04</div>
+
+          <div>
+            <h3>Prototype the interaction</h3>
+
+            <p>
+              I designed a “Getting Started” experience centered around a
+              checklist. Instead of simply linking users to a library,
+              the checklist gives them a clear sequence and visible sense
+              of progress.
+            </p>
+
+            <p>
+              I also explored contextual prompts and tooltips that could
+              introduce key areas of the application at the point they
+              become relevant.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="case-process-step">
+
+          <div class="case-process-number">05</div>
+
+          <div>
+            <h3>Evaluate implementation paths</h3>
+
+            <p>
+              An important constraint emerged early: building a complete
+              onboarding system directly into the product could require
+              significant engineering investment.
+            </p>
+
+            <p>
+              Rather than allowing that constraint to stop the concept,
+              we explored whether a product-adoption platform could provide
+              a faster way to validate the experience.
+            </p>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SYSTEM -->
+    <section class="case-section case-two-column">
+
+      <div class="case-section-label">
+        <p class="eyebrow">04 · EXPERIENCE MODEL</p>
+      </div>
+
+      <div class="case-section-content">
+
+        <h2>
+          A role-based system instead of one-size-fits-all onboarding.
+        </h2>
+
+        <p>
+          The underlying model separates training content from the user's
+          pathway. This allows the organization to maintain a centralized
+          library while presenting a curated experience to each user.
+        </p>
+
+        <div class="experience-model">
+
+          <div class="experience-node">
+            <span>1</span>
+            <strong>User role</strong>
+            <p>
+              Identify the user's responsibilities or onboarding pathway.
+            </p>
+          </div>
+
+          <div class="experience-arrow">↓</div>
+
+          <div class="experience-node">
+            <span>2</span>
+            <strong>Curated checklist</strong>
+            <p>
+              Surface the highest-priority learning content for that role.
+            </p>
+          </div>
+
+          <div class="experience-arrow">↓</div>
+
+          <div class="experience-node">
+            <span>3</span>
+            <strong>Product guidance</strong>
+            <p>
+              Introduce important features and workflows contextually.
+            </p>
+          </div>
+
+          <div class="experience-arrow">↓</div>
+
+          <div class="experience-node">
+            <span>4</span>
+            <strong>Continued learning</strong>
+            <p>
+              Keep supporting resources available after onboarding ends.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DESIGN -->
+    <section class="case-section case-feature-section">
+
+      <div class="case-section-heading">
+
+        <p class="eyebrow">05 · THE EXPERIENCE</p>
+
+        <h2>
+          Giving new users a clear place to start.
+        </h2>
+
+        <p>
+          The Getting Started checklist became the entry point for the
+          onboarding experience.
+        </p>
+
+      </div>
+
+      <div class="case-feature-image">
+
+        <img
+          src="assets/project-onboarding.png"
+          alt="Getting Started onboarding design"
+        />
+
+      </div>
+
+      <div class="case-feature-copy-grid">
+
+        <article>
+
+          <span>01</span>
+
+          <h3>Immediate orientation</h3>
+
+          <p>
+            For a new user, the checklist can appear shortly after entering
+            the product so they do not have to discover onboarding on
+            their own.
+          </p>
+
+        </article>
+
+        <article>
+
+          <span>02</span>
+
+          <h3>Visible progress</h3>
+
+          <p>
+            Checklist completion turns a collection of training materials
+            into a structured journey and provides users with a clearer
+            sense of what remains.
+          </p>
+
+        </article>
+
+        <article>
+
+          <span>03</span>
+
+          <h3>Mixed learning formats</h3>
+
+          <p>
+            The pathway can include PDFs, videos, product walkthroughs,
+            and contextual guidance rather than relying on a single
+            content format.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- USERFLOW / POC -->
+    <section class="case-section case-two-column">
+
+      <div class="case-section-label">
+        <p class="eyebrow">06 · PROOF OF CONCEPT</p>
+      </div>
+
+      <div class="case-section-content">
+
+        <h2>
+          Validating the strategy without waiting for a full product build.
+        </h2>
+
+        <p class="case-large-copy">
+          Once engineering effort became a key consideration, I shifted
+          from thinking only about the ideal end-state experience to
+          considering how we could test the strategy more quickly.
+        </p>
+
+        <p>
+          Our team explored Userflow as a potential way to layer onboarding
+          experiences onto the existing application.
+        </p>
+
+        <p>
+          I created a proof-of-concept environment where I could test
+          behaviors such as automatically recognizing a new user's arrival,
+          displaying a Getting Started checklist, collecting onboarding
+          information, and guiding users toward important product areas.
+        </p>
+
+        <div class="poc-callout">
+
+          <p class="eyebrow">POC COMPONENTS</p>
+
+          <p>
+            Welcome experience · User information capture ·
+            Role-specific checklist · Training links ·
+            Tooltips · Product walkthroughs ·
+            Checklist restart/reset behavior
+          </p>
+
+        </div>
+
+        <p>
+          The goal of the POC was not simply to reproduce my original UI.
+          It was to evaluate whether the onboarding strategy could work
+          within a lower-engineering implementation model before committing
+          to a larger product investment.
         </p>
 
       </div>
@@ -161,31 +581,276 @@
     </section>
 
 
-    <section class="section case-section">
+    <!-- ADMIN -->
+    <section class="case-section case-admin-section">
 
-      <div class="case-wrap">
+      <div class="case-section-heading">
 
-        <p class="eyebrow">OUTCOME</p>
+        <p class="eyebrow">07 · DESIGNING FOR SCALE</p>
 
         <h2>
-          A scalable foundation for product education.
+          I also considered the people maintaining the experience.
         </h2>
 
         <p>
-          The concept provides a structured foundation for bringing training
-          directly into the product experience while reducing dependence on
-          separate training resources.
+          A scalable onboarding system needs more than a polished
+          learner-facing interface.
         </p>
 
-        <a class="button button-primary" href="index.html#work">
-          Back to Selected Work →
-        </a>
+      </div>
+
+      <div class="case-admin-grid">
+
+        <article>
+          <span>01</span>
+          <h3>Manage content</h3>
+          <p>
+            Administrators could add, edit, organize, or retire videos,
+            PDFs, and other training resources.
+          </p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Create roles</h3>
+          <p>
+            Teams could define different user roles or learning profiles
+            as the product and organization evolve.
+          </p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Assign pathways</h3>
+          <p>
+            Content could be assembled into targeted learning paths rather
+            than requiring duplicate training libraries.
+          </p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Maintain experiences</h3>
+          <p>
+            Product teams could update onboarding flows as workflows,
+            features, and training requirements change.
+          </p>
+        </article>
 
       </div>
+
+    </section>
+
+
+    <!-- SUCCESS -->
+    <section class="case-section case-two-column">
+
+      <div class="case-section-label">
+        <p class="eyebrow">08 · MEASURING SUCCESS</p>
+      </div>
+
+      <div class="case-section-content">
+
+        <h2>
+          What I would measure after implementation.
+        </h2>
+
+        <p>
+          Because this work is still in the concept and proof-of-concept
+          stage, I would not use adoption metrics as if the experience has
+          already launched.
+        </p>
+
+        <p>
+          Instead, I defined the signals I would want to measure once the
+          experience is piloted.
+        </p>
+
+        <div class="metrics-grid">
+
+          <article>
+            <strong>Onboarding completion</strong>
+            <p>
+              Are users completing the highest-priority resources in their
+              assigned pathway?
+            </p>
+          </article>
+
+          <article>
+            <strong>Resource engagement</strong>
+            <p>
+              Does contextual onboarding increase interaction with training
+              materials compared with relying on the repository alone?
+            </p>
+          </article>
+
+          <article>
+            <strong>Time to confidence</strong>
+            <p>
+              Can new users reach important workflows with less uncertainty
+              or support?
+            </p>
+          </article>
+
+          <article>
+            <strong>Support signals</strong>
+            <p>
+              Are common onboarding questions or repeated training requests
+              reduced?
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- OUTCOME -->
+    <section class="case-section case-outcome-section">
+
+      <div class="case-section-heading">
+
+        <p class="eyebrow">09 · OUTCOME</p>
+
+        <h2>
+          The value of the project was bigger than the checklist.
+        </h2>
+
+      </div>
+
+      <div class="case-outcome-grid">
+
+        <div>
+
+          <p class="case-large-copy">
+            This exploration created a path for the team to think about
+            onboarding as part of the product experience rather than as
+            a separate collection of training materials.
+          </p>
+
+          <p>
+            It also gave us a lower-cost way to explore the concept before
+            asking engineering to invest in a custom onboarding framework.
+          </p>
+
+        </div>
+
+        <aside class="case-outcome-card">
+
+          <p class="eyebrow">THE SHIFT</p>
+
+          <p class="outcome-before">
+            From:
+            <strong>
+              “How do we get users to visit our training site?”
+            </strong>
+          </p>
+
+          <div class="outcome-arrow">↓</div>
+
+          <p>
+            To:
+            <strong>
+              “How do we bring the right learning experience to the user?”
+            </strong>
+          </p>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <!-- REFLECTION -->
+    <section class="case-section case-reflection">
+
+      <p class="eyebrow">10 · REFLECTION</p>
+
+      <h2>
+        What this project reinforced for me.
+      </h2>
+
+      <p class="case-large-copy">
+        Good product design does not always start with a new feature.
+        Sometimes it begins by reframing the problem the team is trying
+        to solve.
+      </p>
+
+      <p>
+        In this project, the initial request centered around increasing
+        engagement with an existing training resource. By stepping back,
+        I was able to explore a broader experience strategy: role-based
+        onboarding, contextual learning, and a scalable structure that
+        could connect product usage and training more intentionally.
+      </p>
+
+      <p>
+        It also reinforced the importance of balancing an ideal experience
+        with implementation realities. When a custom build presented a
+        significant engineering cost, I did not treat that as the end of
+        the design conversation. I explored a smaller proof of concept
+        that could help the team learn before making a larger investment.
+      </p>
+
+      <p>
+        That combination of user needs, business goals, technical
+        constraints, and validation strategy is the type of problem space
+        I enjoy working in most.
+      </p>
+
+    </section>
+
+
+    <!-- NEXT PROJECT -->
+    <section class="case-next-project">
+
+      <p class="eyebrow">NEXT PROJECT</p>
+
+      <h2>
+        More work coming soon.
+      </h2>
+
+      <a class="button button-primary" href="index.html#work">
+        Back to selected work →
+      </a>
 
     </section>
 
   </main>
+
+
+  <footer>
+
+    <p>
+      © <span id="year"></span> Jennifer Martin
+    </p>
+
+    <div>
+
+      <a
+        class="social-icon"
+        href="https://urldefense.com/v3/__https://www.linkedin.com/in/jennifermartin24__;!!KMayzP4JbQ!elhSerb-6hyghV3omB8UflW-agBiyaJa5MuXrv6LHlJswNYmBDzNplZ0zy8t5cdv8TXQYpCM0_oU_nfU4Pv_$ "
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Jennifer Martin on LinkedIn"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.94 8.5H3.56V19H6.94V8.5ZM5.25 3A1.96 1.96 0 1 0 5.25 6.92 1.96 1.96 0 0 0 5.25 3ZM19.44 13.08C19.44 9.92 17.75 8.45 15.5 8.45C13.68 8.45 12.86 9.45 12.4 10.15V8.5H9.02V19H12.4V13.8C12.4 12.43 12.66 11.1 14.36 11.1C16.04 11.1 16.06 12.67 16.06 13.9V19H19.44V13.08Z"/>
+        </svg>
+      </a>
+
+      <a href="index.html">
+        Back to portfolio ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
