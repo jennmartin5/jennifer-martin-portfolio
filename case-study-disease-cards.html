@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Disease Card Redesign — Product Design case study by Jennifer Martin."
+  />
+
+  <title>Disease Card Redesign | Jennifer Martin</title>
+
+  <link rel="preconnect" href="https://urldefense.com/v3/__https://fonts.googleapis.com__;!!KMayzP4JbQ!ftSK_t754P0mB6YouHt3lqTx93rTNLhy2FSQfs7tUgC3SkLPxarx7yRCMAFp5EjOVRNmVsDQ4hPYEgfxi6w$ ">
+  <link rel="preconnect" href="https://urldefense.com/v3/__https://fonts.gstatic.com__;!!KMayzP4JbQ!ftSK_t754P0mB6YouHt3lqTx93rTNLhy2FSQfs7tUgC3SkLPxarx7yRCMAFp5EjOVRNmVsDQ4hPYL3g2bG0$ " crossorigin>
+
+  <link
+    href="https://urldefense.com/v3/__https://fonts.googleapis.com/css2?family=DM*Sans:wght@400;500;600;700&family=Playfair*Display:wght@500;600&display=swap__;Kys!!KMayzP4JbQ!ftSK_t754P0mB6YouHt3lqTx93rTNLhy2FSQfs7tUgC3SkLPxarx7yRCMAFp5EjOVRNmVsDQ4hPY5G6P6yY$ "
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="case-study-page">
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+
+    <a class="brand" href="index.html">JM</a>
+
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="case-hero">
+
+      <a class="case-back-link" href="index.html#work">
+        ← Back to selected work
+      </a>
+
+      <div class="case-hero-grid">
+
+        <div class="case-hero-copy">
+
+          <p class="eyebrow">
+            CLINICAL UX · PRODUCT REDESIGN
+          </p>
+
+          <h1>
+            Making clinical trial information easier to scan and prioritize.
+          </h1>
+
+          <p class="case-hero-lead">
+            I redesigned the Disease View to help clinical users quickly scan
+            disease categories and identify relevant trial information when
+            matching patients to clinical trials.
+          </p>
+
+        </div>
+
+
+        <aside class="case-summary-card">
+
+          <div class="case-summary-item">
+            <span>My Role</span>
+            <p>UX / Product Designer</p>
+          </div>
+
+          <div class="case-summary-item">
+            <span>Focus</span>
+            <p>
+              Information hierarchy · Interaction design · UI design
+            </p>
+          </div>
+
+          <div class="case-summary-item">
+            <span>Environment</span>
+            <p>
+              Healthcare · Clinical trial technology
+            </p>
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 01 THE PROBLEM -->
+    <section class="case-section disease-case-section">
+
+      <div class="case-section-heading">
+
+        <p class="eyebrow">01 · THE PROBLEM</p>
+
+        <h2>
+          Dense, uneven cards made information difficult to scan.
+        </h2>
+
+        <p>
+          The original cards changed height based on their content and
+          presented conditions, biomarkers, and lines of therapy in dense
+          blocks of text.
+        </p>
+
+        <p>
+          This created an inconsistent layout that made it harder to quickly
+          compare disease areas and find relevant information.
+        </p>
+
+        <div class="poc-callout">
+          <p class="eyebrow">GOAL</p>
+          <p>
+            Create a more consistent, scannable experience without removing
+            important clinical information.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="disease-visual-block">
+
+        <div class="disease-visual-heading">
+          <span>BEFORE</span>
+          <p>
+            Large, uneven cards created an inconsistent scanning pattern.
+          </p>
+        </div>
+
+        <div class="disease-large-image">
+          <img
+            src="assets/disease-cards-before.jpg"
+            alt="Original Disease View with uneven disease cards"
+          />
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 02 THE REDESIGN -->
+    <section class="case-section disease-case-section">
+
+      <div class="case-section-heading">
+
+        <p class="eyebrow">02 · THE REDESIGN</p>
+
+        <h2>
+          Creating a predictable structure across every card.
+        </h2>
+
+        <p>
+          I reorganized each card around three clearly defined information
+          groups:
+        </p>
+
+        <p class="disease-key-groups">
+          Conditions · Biomarkers · Line of Therapy
+        </p>
+
+
+        <div class="disease-decisions">
+
+          <article>
+            <span>01</span>
+            <p>Consistent card structure and height</p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <p>Clearer information hierarchy</p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <p>Progressive disclosure for additional information</p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <p>Favoriting to keep important disease cards at the top</p>
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <div class="disease-visual-block">
+
+        <div class="disease-visual-heading">
+          <span>AFTER</span>
+          <p>
+            The redesigned cards make information easier to scan, compare,
+            and prioritize.
+          </p>
+        </div>
+
+        <div class="disease-large-image">
+          <img
+            src="assets/disease-cards-after.png"
+            alt="Redesigned Disease View with consistent structured disease cards"
+          />
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 03 KEY INTERACTION -->
+    <section class="case-section case-two-column">
+
+      <div class="case-section-label">
+        <p class="eyebrow">03 · KEY INTERACTION</p>
+      </div>
+
+      <div class="case-section-content">
+
+        <h2>
+          Favorite the disease areas that matter most.
+        </h2>
+
+        <p class="case-large-copy">
+          Users can favorite a disease card to keep it at the top of the page.
+        </p>
+
+        <p>
+          This reduces the need to repeatedly search through the full Disease
+          View and keeps frequently referenced or currently relevant disease
+          areas easy to access.
+        </p>
+
+        <div class="favorite-feature-card">
+
+          <div class="favorite-icon">
+            ♡
+          </div>
+
+          <div>
+            <p class="eyebrow">FAVORITE &amp; PRIORITIZE</p>
+
+            <p>
+              Bookmarking gives users a lightweight way to personalize the
+              Disease View around the disease areas they reference most.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- OUTCOME -->
+    <section class="case-section disease-outcome">
+
+      <p class="eyebrow">OUTCOME</p>
+
+      <h2>
+        A clearer, more scalable Disease View.
+      </h2>
+
+      <p class="case-large-copy">
+        The redesign transformed an uneven, text-heavy interface into a
+        consistent card system that makes complex clinical trial information
+        easier to navigate and prioritize.
+      </p>
+
+    </section>
+
+
+
+    <!-- BACK TO WORK -->
+    <section class="case-next-project">
+
+      <p class="eyebrow">SELECTED WORK</p>
+
+      <h2>
+        Explore more of my work.
+      </h2>
+
+      <a
+        class="button button-primary"
+        href="index.html#work"
+      >
+        Back to selected work →
+      </a>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © <span id="year"></span> Jennifer Martin
+    </p>
+
+    <div>
+
+      <a
+        class="social-icon"
+        href="https://urldefense.com/v3/__https://www.linkedin.com/in/jennifermartin24__;!!KMayzP4JbQ!ftSK_t754P0mB6YouHt3lqTx93rTNLhy2FSQfs7tUgC3SkLPxarx7yRCMAFp5EjOVRNmVsDQ4hPY1Y1k4Hw$ "
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Jennifer Martin on LinkedIn"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M6.94 8.5H3.56V19H6.94V8.5ZM5.25 3A1.96 1.96 0 1 0 5.25 6.92 1.96 1.96 0 0 0 5.25 3ZM19.44 13.08C19.44 9.92 17.75 8.45 15.5 8.45C13.68 8.45 12.86 9.45 12.4 10.15V8.5H9.02V19H12.4V13.8C12.4 12.43 12.66 11.1 14.36 11.1C16.04 11.1 16.06 12.67 16.06 13.9V19H19.44V13.08Z"
+          />
+        </svg>
+      </a>
+
+      <a href="index.html">
+        Back to portfolio ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
