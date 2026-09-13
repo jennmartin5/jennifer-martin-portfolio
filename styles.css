@@ -2196,7 +2196,7 @@ footer {
 
 .onboarding-slide img {
   width: 100%;
-  height: min(62vh, 620px);
+  height: min(70vh, 720px);
   object-fit: contain;
   object-position: center;
   background: #f7f3ed;
