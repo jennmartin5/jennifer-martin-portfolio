@@ -1842,3 +1842,72 @@ footer {
 .project-grid {
   grid-template-columns: minmax(0, 520px);
 }
+
+/* =========================================
+   RESEARCH & PUBLICATION
+   ========================================= */
+
+.publication-section {
+  border-top: 1px solid var(--border);
+}
+
+.publication-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, .75fr);
+  gap: 90px;
+  align-items: start;
+}
+
+.publication-grid h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(42px, 4.5vw, 62px);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -.04em;
+}
+
+.publication-copy > p {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.publication-card {
+  margin-top: 34px;
+  padding: 30px;
+  background: var(--card);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.publication-label {
+  margin: 0 0 14px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+.publication-card h3 {
+  margin: 0 0 14px;
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+
+.publication-meta {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 980px) {
+  .publication-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
