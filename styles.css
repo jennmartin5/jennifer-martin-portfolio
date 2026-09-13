@@ -2068,3 +2068,20 @@ footer {
   }
 
 }
+
+/* =========================================
+   MOBILE PROJECT CARDS
+   ========================================= */
+
+@media (max-width: 720px) {
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+}
