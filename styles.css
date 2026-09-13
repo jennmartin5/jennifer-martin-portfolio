@@ -2183,3 +2183,60 @@ footer {
   }
 
 }
+
+/* =========================================
+   ONBOARDING CAROUSEL SIZE REFINEMENT
+   ========================================= */
+
+.onboarding-carousel {
+  position: relative;
+  max-width: 1100px;
+  margin: 42px auto 0;
+}
+
+.onboarding-slide img {
+  width: 100%;
+  height: min(62vh, 620px);
+  object-fit: contain;
+  object-position: center;
+  background: #f7f3ed;
+  box-shadow: none;
+}
+
+.onboarding-carousel-controls {
+  position: relative;
+  margin-top: 18px;
+}
+
+/* Desktop arrows sit over the image */
+@media (min-width: 721px) {
+
+  .onboarding-prev,
+  .onboarding-next {
+    position: absolute;
+    top: -340px;
+    z-index: 5;
+    background: rgba(247, 243, 237, 0.96);
+    box-shadow: 0 4px 18px rgba(23, 20, 17, 0.10);
+  }
+
+  .onboarding-prev {
+    left: 18px;
+  }
+
+  .onboarding-next {
+    right: 18px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+
+  .onboarding-slide img {
+    height: auto;
+    max-height: 48vh;
+    object-fit: contain;
+  }
+
+}
