@@ -2070,18 +2070,22 @@ footer {
 }
 
 /* =========================================
-   MOBILE PROJECT CARDS
+   FORCE MOBILE PROJECT CARDS TO STACK
    ========================================= */
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
 
-  .project-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  #work .project-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    gap: 24px !important;
   }
 
-  .project-card {
-    width: 100%;
+  #work .project-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 
 }
