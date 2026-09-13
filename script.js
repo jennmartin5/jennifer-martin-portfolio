@@ -44,3 +44,53 @@ function updateActiveNav() {
 
 window.addEventListener("scroll", updateActiveNav);
 updateActiveNav();
+
+/* =========================================
+   ONBOARDING CAROUSEL
+   ========================================= */
+
+const onboardingCarousel = document.querySelector('.onboarding-carousel');
+
+if (onboardingCarousel) {
+
+  const slides = onboardingCarousel.querySelectorAll('.onboarding-slide');
+  const prevButton = onboardingCarousel.querySelector('.onboarding-prev');
+  const nextButton = onboardingCarousel.querySelector('.onboarding-next');
+  const currentCounter = onboardingCarousel.querySelector('.onboarding-current');
+
+  let currentSlide = 0;
+
+  function showOnboardingSlide(index) {
+
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+    });
+
+    slides[index].classList.add('active');
+
+    currentCounter.textContent = index + 1;
+  }
+
+  nextButton.addEventListener('click', () => {
+
+    currentSlide++;
+
+    if (currentSlide >= slides.length) {
+      currentSlide = 0;
+    }
+
+    showOnboardingSlide(currentSlide);
+  });
+
+  prevButton.addEventListener('click', () => {
+
+    currentSlide--;
+
+    if (currentSlide < 0) {
+      currentSlide = slides.length - 1;
+    }
+
+    showOnboardingSlide(currentSlide);
+  });
+
+}
