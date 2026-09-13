@@ -1911,3 +1911,161 @@ footer {
     gap: 40px;
   }
 }
+
+/* =========================================
+   DISEASE CARD CASE STUDY
+   ========================================= */
+
+.disease-case-section {
+  border-top: 1px solid var(--border);
+}
+
+.disease-case-section .case-section-heading {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+.disease-case-section .case-section-heading > p:not(.eyebrow) {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.disease-key-groups {
+  margin-top: 24px !important;
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+.disease-decisions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.disease-decisions article {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px;
+  background: var(--card);
+  border-radius: 14px;
+}
+
+.disease-decisions span {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.disease-decisions p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.disease-visual-block {
+  margin-top: 50px;
+}
+
+.disease-visual-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.disease-visual-heading span {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.disease-visual-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.disease-large-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.disease-large-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.favorite-feature-card {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  margin-top: 36px;
+  padding: 26px;
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.favorite-icon {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 25px;
+}
+
+.favorite-feature-card p:last-child {
+  margin: 0;
+  color: var(--muted);
+}
+
+.disease-outcome {
+  max-width: 900px;
+  border-top: 1px solid var(--border);
+}
+
+.disease-outcome h2 {
+  margin: 0 0 28px;
+  font-family: var(--serif);
+  font-size: clamp(38px, 4vw, 58px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+
+@media (max-width: 720px) {
+
+  .disease-decisions {
+    grid-template-columns: 1fr;
+  }
+
+  .disease-visual-heading {
+    display: block;
+  }
+
+  .disease-visual-heading p {
+    margin-top: 6px;
+  }
+
+  .disease-large-image {
+    border-radius: 14px;
+  }
+
+  .favorite-feature-card {
+    padding: 20px;
+  }
+
+}
