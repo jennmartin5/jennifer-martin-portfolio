@@ -1836,3 +1836,9 @@ footer {
 .project-card:nth-child(3) {
   display: none;
 }
+
+/* Single featured project layout */
+
+.project-grid {
+  grid-template-columns: minmax(0, 520px);
+}
