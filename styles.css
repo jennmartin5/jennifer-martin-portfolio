@@ -1574,6 +1574,8 @@ footer > div {
     font-size: 18px;
   }
 
+   
+
   .case-hero-image {
     margin-top: 50px;
     border-radius: 18px;
@@ -1824,4 +1826,13 @@ footer {
 
 .work-section {
   border-top: 1px solid rgba(23, 20, 17, 0.08);
+}
+
+/* =========================================
+   TEMPORARILY HIDE UNFINISHED PROJECTS
+   ========================================= */
+
+.project-card:nth-child(2),
+.project-card:nth-child(3) {
+  display: none;
 }
