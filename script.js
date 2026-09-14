@@ -94,3 +94,57 @@ if (onboardingCarousel) {
   });
 
 }
+
+/* =========================================
+   ONBOARDING CASE STUDY INTERACTIONS
+   ========================================= */
+
+
+/* 7-STEP PRODUCT TOUR */
+
+const tourTabs = document.querySelectorAll('.tour-tab');
+const tourScreens = document.querySelectorAll('.tour-screen');
+
+tourTabs.forEach((tab, index) => {
+
+  tab.addEventListener('click', () => {
+
+    tourTabs.forEach((item) => {
+      item.classList.remove('active');
+    });
+
+    tourScreens.forEach((screen) => {
+      screen.classList.remove('active');
+    });
+
+    tab.classList.add('active');
+    tourScreens[index].classList.add('active');
+
+  });
+
+});
+
+
+/* HELP & RESOURCES TABS */
+
+const resourceTabs = document.querySelectorAll('.resource-tab');
+const resourceScreens = document.querySelectorAll('.resource-screen');
+
+resourceTabs.forEach((tab, index) => {
+
+  tab.addEventListener('click', () => {
+
+    resourceTabs.forEach((item) => {
+      item.classList.remove('active');
+    });
+
+    resourceScreens.forEach((screen) => {
+      screen.classList.remove('active');
+    });
+
+    tab.classList.add('active');
+    resourceScreens[index].classList.add('active');
+
+  });
+
+});
