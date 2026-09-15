@@ -1828,15 +1828,6 @@ footer {
   border-top: 1px solid rgba(23, 20, 17, 0.08);
 }
 
-/* =========================================
-   TEMPORARILY HIDE UNFINISHED PROJECTS
-   ========================================= */
-
-/* Single featured project layout */
-
-.project-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
 
 /* =========================================
    RESEARCH & PUBLICATION
