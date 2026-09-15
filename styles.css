@@ -2668,3 +2668,251 @@ footer {
   }
 
 }
+
+/* =========================================
+   EHR → EDC CASE STUDY
+   ========================================= */
+
+.case-heading-wide {
+  max-width: 850px;
+  margin-bottom: 48px;
+}
+
+.case-copy-wide {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+
+/* LARGE PRODUCT SCREENSHOTS */
+
+.ehr-feature {
+  width: 100%;
+  margin: 55px auto 20px;
+  padding: 28px;
+  background: #efe8df;
+  border-radius: 26px;
+}
+
+.ehr-feature img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(23, 20, 17, 0.10);
+}
+
+.ehr-feature figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-width: 700px;
+  padding: 22px 4px 2px;
+}
+
+.ehr-feature figcaption strong {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ehr-feature figcaption span {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.72;
+}
+
+
+/* PRODUCT EVOLUTION / WAVES */
+
+.ehr-wave {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.7fr) minmax(0, 1.3fr);
+  gap: 55px;
+  align-items: center;
+
+  margin: 70px 0;
+  padding: 42px;
+
+  background: #efe8df;
+  border-radius: 28px;
+}
+
+.ehr-wave-reverse {
+  grid-template-columns: minmax(0, 1.3fr) minmax(250px, 0.7fr);
+}
+
+.ehr-wave-reverse .ehr-wave-copy {
+  order: 2;
+}
+
+.ehr-wave-reverse .ehr-wave-image {
+  order: 1;
+}
+
+.ehr-wave-label {
+  display: inline-block;
+  margin-bottom: 15px;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+
+  color: #9b5f4a;
+}
+
+.ehr-wave-copy h3 {
+  margin: 0 0 18px;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.05;
+}
+
+.ehr-wave-copy p {
+  margin: 0 0 15px;
+
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.78;
+}
+
+.ehr-wave-image {
+  margin: 0;
+}
+
+.ehr-wave-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(23, 20, 17, 0.12);
+}
+
+
+/* DESIGNED / DEVELOPMENT STATUS */
+
+.case-status-pill {
+  display: inline-flex;
+  align-items: center;
+
+  margin: 25px 0 10px;
+  padding: 9px 14px;
+
+  border: 1px solid rgba(155, 95, 74, 0.3);
+  border-radius: 999px;
+
+  color: #9b5f4a;
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+
+/* PRODUCT BUILD PROCESS */
+
+.case-process-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+
+  margin-top: 70px;
+
+  overflow: hidden;
+  border: 1px solid rgba(23, 20, 17, 0.10);
+  border-radius: 22px;
+}
+
+.case-process-strip > div {
+  min-height: 200px;
+  padding: 28px;
+
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.case-process-strip span {
+  display: block;
+  margin-bottom: 34px;
+
+  color: #9b5f4a;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.case-process-strip strong {
+  display: block;
+  margin-bottom: 10px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+
+.case-process-strip p {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .ehr-feature {
+    margin-top: 35px;
+    padding: 12px;
+    border-radius: 18px;
+  }
+
+  .ehr-feature img {
+    border-radius: 10px;
+  }
+
+  .ehr-feature figcaption {
+    padding: 17px 5px 5px;
+  }
+
+  .ehr-wave,
+  .ehr-wave-reverse {
+    grid-template-columns: 1fr;
+    gap: 28px;
+
+    margin: 45px 0;
+    padding: 22px;
+
+    border-radius: 20px;
+  }
+
+  .ehr-wave-reverse .ehr-wave-copy,
+  .ehr-wave-reverse .ehr-wave-image {
+    order: initial;
+  }
+
+  .case-process-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .case-process-strip > div {
+    min-height: 170px;
+    padding: 22px;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .case-process-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .case-process-strip > div {
+    min-height: auto;
+  }
+
+}
