@@ -2924,3 +2924,12 @@ footer {
 .case-copy p:last-child {
   margin-bottom: 0;
 }
+
+/* =========================================
+   EHR → EDC BODY TEXT WIDTH
+   ========================================= */
+
+.case-section .case-copy {
+  max-width: none;
+  width: 100%;
+}
