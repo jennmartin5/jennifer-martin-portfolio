@@ -2903,3 +2903,24 @@ footer {
   }
 
 }
+
+/* =========================================
+   EHR → EDC CASE STUDY SECTION SPACING
+   ========================================= */
+
+.case-section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.case-section + .case-section {
+  margin-top: 0;
+}
+
+.case-section-heading {
+  margin-bottom: 32px;
+}
+
+.case-copy p:last-child {
+  margin-bottom: 0;
+}
