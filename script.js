@@ -148,3 +148,90 @@ resourceTabs.forEach((tab, index) => {
   });
 
 });
+
+/* =========================================
+   INTERACTIVE PORTFOLIO KITTY
+   ========================================= */
+
+const portfolioKitty = document.getElementById("portfolioKitty");
+const kittyButton = document.getElementById("kittyButton");
+const kittyImage = document.getElementById("kittyImage");
+
+if (portfolioKitty && kittyButton && kittyImage) {
+
+  const kittyImages = {
+    idle: "assets/kitty-idle.png",
+    notice: "assets/kitty-notice.png",
+    look: "assets/kitty-look.png",
+    reach: "assets/kitty-reach.png",
+    eat: "assets/kitty-eat.png",
+    fed: "assets/kitty-fed.png",
+    happy: "assets/kitty-happy.png",
+    wink: "assets/kitty-wink.png"
+  };
+
+  let feeding = false;
+  let reactionTimer;
+
+  function showKitty(state) {
+    kittyImage.src = kittyImages[state];
+  }
+
+  /* React when the mouse approaches */
+  document.addEventListener("mousemove", (event) => {
+    if (feeding) return;
+
+    const rect = portfolioKitty.getBoundingClientRect();
+
+    const kittyX = rect.left + rect.width / 2;
+    const kittyY = rect.top + rect.height / 2;
+
+    const distance = Math.hypot(
+      event.clientX - kittyX,
+      event.clientY - kittyY
+    );
+
+    clearTimeout(reactionTimer);
+
+    if (distance < 170) {
+      showKitty("look");
+    } else if (distance < 300) {
+      showKitty("notice");
+    } else {
+      showKitty("idle");
+    }
+  });
+
+  /* Feed the kitty */
+  kittyButton.addEventListener("click", () => {
+    if (feeding) return;
+
+    feeding = true;
+    portfolioKitty.classList.add("kitty-active");
+
+    showKitty("reach");
+
+    setTimeout(() => {
+      showKitty("eat");
+    }, 450);
+
+    setTimeout(() => {
+      showKitty("fed");
+    }, 1600);
+
+    setTimeout(() => {
+      showKitty("happy");
+    }, 2500);
+
+    setTimeout(() => {
+      showKitty("wink");
+    }, 3500);
+
+    setTimeout(() => {
+      showKitty("idle");
+      portfolioKitty.classList.remove("kitty-active");
+      feeding = false;
+    }, 4400);
+  });
+
+}
