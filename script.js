@@ -150,88 +150,40 @@ resourceTabs.forEach((tab, index) => {
 });
 
 /* =========================================
-   INTERACTIVE PORTFOLIO KITTY
+   INTERACTIVE KITTY
    ========================================= */
 
 const portfolioKitty = document.getElementById("portfolioKitty");
-const kittyButton = document.getElementById("kittyButton");
 const kittyImage = document.getElementById("kittyImage");
+const kittyBowl = document.getElementById("kittyBowl");
+const kittyFeedPrompt = document.getElementById("kittyFeedPrompt");
 
-if (portfolioKitty && kittyButton && kittyImage) {
+if (portfolioKitty && kittyImage && kittyBowl) {
 
-  const kittyImages = {
-    idle: "assets/kitty-idle.png",
-    notice: "assets/kitty-notice.png",
-    look: "assets/kitty-look.png",
-    reach: "assets/kitty-reach.png",
-    eat: "assets/kitty-eat.png",
-    fed: "assets/kitty-fed.png",
-    happy: "assets/kitty-happy.png",
-    wink: "assets/kitty-wink.png"
-  };
+  let kittyState = "idle";
 
-  let feeding = false;
-  let reactionTimer;
+  // Click the bowl → kitty eats
+  kittyBowl.addEventListener("click", (event) => {
+    event.stopPropagation();
 
-  function showKitty(state) {
-    kittyImage.src = kittyImages[state];
-  }
+    if (kittyState !== "idle") return;
 
-  /* React when the mouse approaches */
-  document.addEventListener("mousemove", (event) => {
-    if (feeding) return;
+    kittyState = "eating";
 
-    const rect = portfolioKitty.getBoundingClientRect();
+    kittyImage.src = "assets/kitty-eat.png";
 
-    const kittyX = rect.left + rect.width / 2;
-    const kittyY = rect.top + rect.height / 2;
-
-    const distance = Math.hypot(
-      event.clientX - kittyX,
-      event.clientY - kittyY
-    );
-
-    clearTimeout(reactionTimer);
-
-    if (distance < 170) {
-      showKitty("look");
-    } else if (distance < 300) {
-      showKitty("notice");
-    } else {
-      showKitty("idle");
+    if (kittyFeedPrompt) {
+      kittyFeedPrompt.classList.add("hidden");
     }
   });
 
-  /* Feed the kitty */
-  kittyButton.addEventListener("click", () => {
-    if (feeding) return;
+  // After feeding, click the kitty → happy kitty
+  kittyImage.addEventListener("click", () => {
 
-    feeding = true;
-    portfolioKitty.classList.add("kitty-active");
+    if (kittyState !== "eating") return;
 
-    showKitty("reach");
-
-    setTimeout(() => {
-      showKitty("eat");
-    }, 450);
-
-    setTimeout(() => {
-      showKitty("fed");
-    }, 1600);
-
-    setTimeout(() => {
-      showKitty("happy");
-    }, 2500);
-
-    setTimeout(() => {
-      showKitty("wink");
-    }, 3500);
-
-    setTimeout(() => {
-      showKitty("idle");
-      portfolioKitty.classList.remove("kitty-active");
-      feeding = false;
-    }, 4400);
+    kittyState = "happy";
+    kittyImage.src = "assets/kitty-happy.png";
   });
 
 }
