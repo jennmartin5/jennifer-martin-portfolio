@@ -2934,3 +2934,92 @@ footer {
   width: 100%;
 }
 
+/* =========================================
+   INTERACTIVE KITTY
+   ========================================= */
+
+.portfolio-kitty {
+  position: fixed;
+  right: 24px;
+  bottom: 18px;
+  width: 190px;
+  z-index: 900;
+  pointer-events: none;
+}
+
+.kitty-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.kitty-image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  transform-origin: 50% 100%;
+  transition:
+    transform 0.3s ease,
+    opacity 0.18s ease;
+
+  filter: drop-shadow(0 8px 12px rgba(45, 30, 20, 0.10));
+}
+
+/* Gentle idle movement */
+.portfolio-kitty:not(.kitty-active) .kitty-image {
+  animation: kittyIdle 3.5s ease-in-out infinite;
+}
+
+@keyframes kittyIdle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-4px) rotate(1deg);
+  }
+}
+
+/* Feeding reaction */
+.portfolio-kitty.kitty-active .kitty-image {
+  animation: kittyBounce 0.4s ease;
+}
+
+@keyframes kittyBounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  45% {
+    transform: translateY(-9px) scale(1.03);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .portfolio-kitty {
+    width: 135px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .kitty-image {
+    animation: none !important;
+    transition: none;
+  }
+}
