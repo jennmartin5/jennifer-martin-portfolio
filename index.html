@@ -529,9 +529,12 @@
      INTERACTIVE PORTFOLIO KITTY
      ========================================= -->
 
-<div class="portfolio-kitty" id="portfolioKitty" aria-label="Interactive orange kitty">
+<div class="portfolio-kitty" id="portfolioKitty">
+
+  <div class="kitty-heart" id="kittyHeart">♥</div>
 
   <div class="kitty-character" id="kittyCharacter">
+
     <div class="kitty-tail"></div>
 
     <div class="kitty-body">
@@ -539,27 +542,47 @@
     </div>
 
     <div class="kitty-head">
-      <div class="kitty-ear kitty-ear-left"></div>
-      <div class="kitty-ear kitty-ear-right"></div>
 
-      <div class="kitty-stripe stripe-one"></div>
-      <div class="kitty-stripe stripe-two"></div>
-      <div class="kitty-stripe stripe-three"></div>
-
-      <div class="kitty-eye kitty-eye-left">
-        <div class="kitty-pupil"></div>
+      <div class="kitty-ear kitty-ear-left">
+        <div class="kitty-ear-inner"></div>
       </div>
 
-      <div class="kitty-eye kitty-eye-right">
-        <div class="kitty-pupil"></div>
+      <div class="kitty-ear kitty-ear-right">
+        <div class="kitty-ear-inner"></div>
       </div>
 
-      <div class="kitty-muzzle">
+      <div class="kitty-stripes">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="kitty-face">
+
+        <div class="kitty-eye kitty-eye-left">
+          <div class="kitty-pupil"></div>
+        </div>
+
+        <div class="kitty-eye kitty-eye-right">
+          <div class="kitty-pupil"></div>
+        </div>
+
+        <div class="kitty-cheek kitty-cheek-left"></div>
+        <div class="kitty-cheek kitty-cheek-right"></div>
+
         <div class="kitty-nose"></div>
-        <div class="kitty-mouth"></div>
+
+        <div class="kitty-mouth">
+          <span></span>
+          <span></span>
+        </div>
+
       </div>
+
     </div>
+
   </div>
+
 
   <button
     class="kitty-bowl"
@@ -567,15 +590,12 @@
     type="button"
     aria-label="Feed the kitty"
   >
-    <span class="kitty-food"></span>
-    <span class="kitty-bowl-front">
-      <span class="kitty-paw-print">♥</span>
+    <span class="kitty-food" id="kittyFood"></span>
+    <span class="kitty-bowl-rim"></span>
+    <span class="kitty-bowl-body">
+      <span class="kitty-bowl-heart">♥</span>
     </span>
   </button>
-
-  <div class="kitty-message" id="kittyMessage">
-    Feed me!
-  </div>
 
 </div>
 
