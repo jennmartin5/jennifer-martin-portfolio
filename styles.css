@@ -2975,7 +2975,7 @@ footer {
 
 /* Gentle idle movement */
 .portfolio-kitty:not(.kitty-active) .kitty-image {
-  animation: kittyIdle 3.5s ease-in-out infinite;
+  animation: none;
 }
 
 @keyframes kittyIdle {
