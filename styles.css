@@ -1,3 +1,5 @@
+@import url('https://urldefense.com/v3/__https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap__;!!KMayzP4JbQ!da-dzYpQ-wt1ezYzBUmUuhXJNTX4O7XylsMdFic1LGfIk6k0eCptcSW5o9FLV-XMt3oL-MD3qP3Oip94nHA$ ');
+
 /* ========================================
    JENNIFER MARTIN — PORTFOLIO
    ======================================== */
@@ -2967,18 +2969,43 @@ footer {
 .kitty-feed-prompt {
   position: absolute;
 
-  left: -42px;
-  bottom: 40px;
+  left: -105px;
+  bottom: 28px;
 
-  font-family: "DM Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-  color: #8f4a36;
+  color: #a85f43;
+
+  pointer-events: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.kitty-feed-text {
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
 
   white-space: nowrap;
 
-  transition: opacity 0.2s ease;
+  transform: rotate(-3deg);
+}
+
+.kitty-feed-arrow {
+  width: 72px;
+  height: 52px;
+
+  margin-top: 3px;
+  margin-right: -14px;
+
+  overflow: visible;
+}
+
+.kitty-feed-prompt.hidden {
+  opacity: 0;
 }
 
 .kitty-feed-prompt span {
