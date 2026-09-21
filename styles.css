@@ -2935,29 +2935,17 @@ footer {
 }
 
 /* =========================================
-   INTERACTIVE KITTY
+   INTERACTIVE KITTY — SIMPLE VERSION
    ========================================= */
 
 .portfolio-kitty {
   position: fixed;
-  right: 24px;
+  right: 22px;
   bottom: 18px;
-  width: 190px;
-  z-index: 900;
-  pointer-events: none;
-}
 
-.kitty-button {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  pointer-events: auto;
-  appearance: none;
-  -webkit-appearance: none;
+  width: 185px;
+
+  z-index: 999;
 }
 
 .kitty-image {
@@ -2965,61 +2953,88 @@ footer {
   width: 100%;
   height: auto;
 
-  transform-origin: 50% 100%;
-  transition:
-    transform 0.3s ease,
-    opacity 0.18s ease;
+  cursor: pointer;
+
+  /* No automatic movement */
+  animation: none !important;
+  transform: none !important;
 
   filter: drop-shadow(0 8px 12px rgba(45, 30, 20, 0.10));
 }
 
-/* Gentle idle movement */
-.portfolio-kitty:not(.kitty-active) .kitty-image {
-  animation: none;
+/* Feed me message */
+
+.kitty-feed-prompt {
+  position: absolute;
+
+  left: -42px;
+  bottom: 40px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #8f4a36;
+
+  white-space: nowrap;
+
+  transition: opacity 0.2s ease;
 }
 
-@keyframes kittyIdle {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-4px) rotate(1deg);
-  }
+.kitty-feed-prompt span {
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 17px;
 }
 
-/* Feeding reaction */
-.portfolio-kitty.kitty-active .kitty-image {
-  animation: kittyBounce 0.4s ease;
+.kitty-feed-prompt.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
-@keyframes kittyBounce {
-  0% {
-    transform: translateY(0) scale(1);
-  }
+/*
+Invisible clickable area positioned
+over the bowl in kitty-idle.png
+*/
 
-  45% {
-    transform: translateY(-3px) scale(1);
-  }
+.kitty-bowl-click {
+  position: absolute;
 
-  100% {
-    transform: translateY(0) scale(1);
-  }
+  left: 0;
+  bottom: 0;
+
+  width: 78px;
+  height: 55px;
+
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  z-index: 5;
 }
 
 /* Mobile */
+
 @media (max-width: 720px) {
+
   .portfolio-kitty {
-    width: 135px;
+    width: 140px;
     right: 10px;
     bottom: 10px;
   }
-}
 
-/* Respect reduced-motion settings */
-@media (prefers-reduced-motion: reduce) {
-  .kitty-image {
-    animation: none !important;
-    transition: none;
+  .kitty-feed-prompt {
+    left: -38px;
+    bottom: 30px;
+    font-size: 11px;
+  }
+
+  .kitty-bowl-click {
+    width: 60px;
+    height: 44px;
   }
 }
