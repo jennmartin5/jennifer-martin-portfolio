@@ -2999,7 +2999,7 @@ footer {
   }
 
   45% {
-    transform: translateY(-9px) scale(1.03);
+    transform: translateY(-3px) scale(1);
   }
 
   100% {
