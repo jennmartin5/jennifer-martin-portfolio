@@ -2969,7 +2969,7 @@ footer {
 .kitty-feed-prompt {
   position: absolute;
 
-  left: -5px;
+  left: -15px;
   bottom: 28px;
 
   display: flex;
